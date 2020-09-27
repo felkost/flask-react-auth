@@ -23,6 +23,7 @@
   
  **Запуск трьох контейнерів одночасно**  
  Можуть виникати [проблеми](https://dev.to/igmrrf/docker-react-exited-with-code-0-398n)  
+ ([Основні команди.](https://testdriven.io/courses/auth-flask-react/react-and-docker/#H-1-commands))
  Для поточного проекту рішенням стало добавити в docker-compose.yaml параметр `stdin_open: true` для сервісу client.  
  Під час створення - контейнер з сервісом React іменується автоматично flask-react-auth-client_1.  
  Алгоритм розгортання сервісів:  
@@ -35,6 +36,8 @@
  http://localhost:5001/users  
  http://localhost:5001/doc  
  http://localhost:5001/admin/users
+ 
+ 
    
  
  
