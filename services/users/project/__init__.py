@@ -2,10 +2,12 @@ import os
 from flask import Flask
 from flask_admin import Admin
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
 
 
 # создать экземпляр базы данных
 db = SQLAlchemy()
+cors = CORS()
 admin = Admin(template_mode="bootstrap3")
 
 
@@ -20,6 +22,7 @@ def create_app(script_info=None):
 
     # set up extensions
     db.init_app(app)
+    cors.init_app(app, resources={r"*": {"origins": "*"}})
     admin.init_app(app)
 
     # register api

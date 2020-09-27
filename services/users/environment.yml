@@ -14,4 +14,5 @@ dependencies:
   - conda-forge::black
   - conda-forge::isort
   - conda-forge::flask-admin
-  - pytest-xdist
+  - conda-forge::pytest-xdist
+  - conda-forge::flask-cors

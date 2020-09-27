@@ -18,5 +18,7 @@
  - зупинити роботу контейнерів  
  `docker-compose stop`
  - вилучити контейнери  
- `docker-compose down`  
+ `docker-compose down` 
+ PS: список основних команд в [проекті](https://testdriven.io/courses/auth-flask-react/getting-started/)  
+  
  
