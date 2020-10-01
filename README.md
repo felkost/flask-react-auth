@@ -27,6 +27,7 @@
  Для поточного проекту рішенням стало добавити в docker-compose.yaml параметр `stdin_open: true` для сервісу client.  
  Під час створення - контейнер з сервісом React іменується автоматично flask-react-auth-client_1.  
  Алгоритм розгортання сервісів:  
+ - export REACT_APP_USERS_SERVICE_URL=http://localhost:5001  
  - побудувати контейнери docker-compose up -d --build  
  - створит базу даних docker-compose exec users python manage.py recreate_db  
  - наповнити базу даних тестовими даними docker-compose exec users python manage.py seed_db  
